@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join Free Classes — Akebono Sensei | お問い合わせ</title>
+  <meta name="description" content="Sign up for free Japanese classes. Tell us your level and goals — beginners especially welcome. お問い合わせはこちら。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Join Free Classes — Akebono Sensei" />
+  <meta property="og:description" content="Sign up for warm, free Japanese lessons today." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=Noto+Sans+JP:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/typography.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/pages/about.css" />
+  <link rel="stylesheet" href="css/pages/contact.css" />
+</head>
+<body>
+  <div class="grain-overlay" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header>
+    <nav class="nav" aria-label="Main navigation">
+      <div class="nav__brand"><a href="index.html" aria-label="Akebono Sensei home"><span class="nav__logo-en">Akebono</span><span class="nav__logo-ja" lang="ja">曙</span></a></div>
+      <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu"><span class="nav__bar"></span><span class="nav__bar"></span><span class="nav__bar"></span></button>
+      <ul class="nav__menu" id="nav-menu" role="list">
+        <li><a href="index.html" class="nav__link">Home <span lang="ja">ホーム</span></a></li>
+        <li><a href="about.html" class="nav__link">About <span lang="ja">先生について</span></a></li>
+        <li><a href="classes.html" class="nav__link">Classes <span lang="ja">クラス</span></a></li>
+        <li><a href="schedule.html" class="nav__link">Schedule <span lang="ja">時間割</span></a></li>
+        <li><a href="resources.html" class="nav__link">Resources <span lang="ja">教材</span></a></li>
+        <li><a href="gallery.html" class="nav__link">Gallery <span lang="ja">ギャラリー</span></a></li>
+        <li><a href="contact.html" class="nav__link nav__link--cta">Join Free <span lang="ja">無料参加</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero container">
+      <span class="eyebrow">Join free · 無料参加</span>
+      <h1 class="page-hero__title">Start your journey</h1>
+      <p class="page-hero__title" style="font-size:var(--text-xl);color:var(--color-accent)" lang="ja">お問い合わせ</p>
+      <p class="page-hero__lede">Fill in the form and sensei will personally reply within a couple of days. There’s no fee and no obligation — just a warm welcome.</p>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container contact-layout">
+        <!-- FORM -->
+        <div class="reveal reveal--left">
+          <div class="contact-form-card">
+            <div class="bilingual-heading" style="margin-bottom:1.5rem;">
+              <h2 class="heading-en">Join free classes</h2>
+              <p class="heading-ja" lang="ja">無料クラスに申し込む</p>
+            </div>
+
+            <form class="form" id="signup-form" novalidate>
+              <div class="form__group">
+                <label class="form__label" for="name">Name <span class="form__required" aria-hidden="true">*</span></label>
+                <input class="form__input" type="text" id="name" name="name" autocomplete="name" required aria-required="true" aria-describedby="err-name" placeholder="Your name" />
+                <span class="form__error" id="err-name" data-error-for="name" role="alert"></span>
+              </div>
+
+              <div class="form__group">
+                <label class="form__label" for="email">Email <span class="form__required" aria-hidden="true">*</span></label>
+                <input class="form__input" type="email" id="email" name="email" autocomplete="email" required aria-required="true" aria-describedby="err-email" placeholder="you@example.com" />
+                <span class="form__error" id="err-email" data-error-for="email" role="alert"></span>
+              </div>
+
+              <div class="form__group">
+                <label class="form__label" for="level">Current level <span class="form__required" aria-hidden="true">*</span></label>
+                <select class="form__select" id="level" name="level" required aria-required="true" aria-describedby="err-level">
+                  <option value="">Choose your level…</option>
+                  <option value="none">Complete beginner — 初心者</option>
+                  <option value="n5">Beginner (N5)</option>
+                  <option value="n4-n3">Intermediate (N4–N3)</option>
+                  <option value="n2-n1">Advanced (N2–N1)</option>
+                  <option value="conversation">Just want to speak — 会話</option>
+                </select>
+                <span class="form__error" id="err-level" data-error-for="level" role="alert"></span>
+              </div>
+
+              <div class="form__group">
+                <label class="form__label" for="goals">Your goals <span class="form__required" aria-hidden="true">*</span></label>
+                <textarea class="form__textarea" id="goals" name="goals" required aria-required="true" aria-describedby="err-goals" placeholder="e.g. I want to travel to Japan, watch anime without subtitles, or pass the JLPT…"></textarea>
+                <span class="form__error" id="err-goals" data-error-for="goals" role="alert"></span>
+              </div>
+
+              <fieldset class="form__group" style="border:none;padding:0;">
+                <legend class="form__label">Preferred schedule</legend>
+                <div class="form__options">
+                  <label class="form__option"><input type="checkbox" name="schedule" value="weekday-morning" /> Weekday mornings</label>
+                  <label class="form__option"><input type="checkbox" name="schedule" value="weekday-evening" /> Weekday evenings</label>
+                  <label class="form__option"><input type="checkbox" name="schedule" value="weekend" /> Weekends</label>
+                  <label class="form__option"><input type="checkbox" name="schedule" value="flexible" /> I’m flexible</label>
+                </div>
+              </fieldset>
+
+              <button type="submit" class="btn btn--primary btn--lg btn--block">Send my application →</button>
+              <p class="form__hint">We’ll never share your details. Reply usually within 2 days.</p>
+            </form>
+
+            <div class="form__success" id="form-success" role="status">
+              <span style="font-size:1.6rem" aria-hidden="true">🌅</span>
+              <div>
+                <strong lang="ja">ありがとうございます！</strong>
+                <p style="margin-top:.25rem">Thank you — your application is in. Sensei will email you soon. Welcome to Akebono!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ASIDE -->
+        <aside class="contact-aside reveal reveal--right">
+          <div class="contact-info">
+            <span class="vertical-ja" lang="ja" aria-hidden="true">お気軽に</span>
+            <div class="bilingual-heading"><h3 class="heading-en">Get in touch</h3><p class="heading-ja" style="color:rgba(255,255,255,.8)" lang="ja">連絡先</p></div>
+            <ul class="contact-info__list">
+              <li class="contact-info__item"><span class="contact-info__icon" aria-hidden="true">✉️</span><span>Email<br /><a href="mailto:hello@akebono-sensei.example">hello@akebono-sensei.example</a></span></li>
+              <li class="contact-info__item"><span class="contact-info__icon" aria-hidden="true">💬</span><span>Discord community<br /><a href="#">Join the server</a></span></li>
+              <li class="contact-info__item"><span class="contact-info__icon" aria-hidden="true">🕐</span><span>Response time<br />Usually within 2 days</span></li>
+              <li class="contact-info__item"><span class="contact-info__icon" aria-hidden="true">🌐</span><span>Languages<br />English · 日本語</span></li>
+            </ul>
+            <div class="contact-social">
+              <a href="#" aria-label="Discord">✦</a>
+              <a href="#" aria-label="Instagram">◎</a>
+              <a href="#" aria-label="YouTube">▶</a>
+            </div>
+          </div>
+
+          <div class="map-placeholder">
+            <div>
+              <strong>📍 In-person classes</strong>
+              <p style="margin-top:.5rem;font-size:var(--text-sm)">Map embed placeholder — drop in a Google Maps iframe for your venue here.</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <div class="nav__brand"><a href="index.html"><span class="nav__logo-en" style="color:#fff">Akebono</span> <span class="footer__brand-ja" lang="ja">曙先生</span></a></div>
+        <p style="margin-top:1rem;max-width:32ch;">Free Japanese classes, taught with heart. A gift of language to anyone ready to begin.</p>
+        <div class="footer__social"><a href="#" aria-label="Discord">✦</a><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="YouTube">▶</a></div>
+      </div>
+      <div><h2 class="footer__title">Learn</h2><ul class="footer__list" role="list"><li><a href="classes.html">Classes</a></li><li><a href="schedule.html">Schedule</a></li><li><a href="resources.html">Resources</a></li></ul></div>
+      <div><h2 class="footer__title">About</h2><ul class="footer__list" role="list"><li><a href="about.html">The Teacher</a></li><li><a href="contact.html">Join Free</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h2 class="footer__title" lang="ja">ようこそ</h2><p style="max-width:30ch;">Questions? <a href="contact.html">Reach out</a> — beginners especially welcome.</p></div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span data-year>2026</span> Akebono Sensei. Made with care for free learning.</span>
+      <span lang="ja">日本語を、みんなに。</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/contact.js" defer></script>
+</body>
+</html>

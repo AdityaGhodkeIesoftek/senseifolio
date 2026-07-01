@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Schedule — Akebono Sensei | 時間割</title>
+  <meta name="description" content="Weekly timetable of free Japanese classes — beginner to advanced, online and in-person. See how to join and read FAQs." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Schedule — Akebono Sensei" />
+  <meta property="og:description" content="Weekly free Japanese class timetable and how to join." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=Noto+Sans+JP:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/typography.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/pages/about.css" />
+  <link rel="stylesheet" href="css/pages/classes.css" />
+  <link rel="stylesheet" href="css/pages/gallery.css" />
+</head>
+<body>
+  <div class="grain-overlay" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header>
+    <nav class="nav" aria-label="Main navigation">
+      <div class="nav__brand"><a href="index.html" aria-label="Akebono Sensei home"><span class="nav__logo-en">Akebono</span><span class="nav__logo-ja" lang="ja">曙</span></a></div>
+      <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu"><span class="nav__bar"></span><span class="nav__bar"></span><span class="nav__bar"></span></button>
+      <ul class="nav__menu" id="nav-menu" role="list">
+        <li><a href="index.html" class="nav__link">Home <span lang="ja">ホーム</span></a></li>
+        <li><a href="about.html" class="nav__link">About <span lang="ja">先生について</span></a></li>
+        <li><a href="classes.html" class="nav__link">Classes <span lang="ja">クラス</span></a></li>
+        <li><a href="schedule.html" class="nav__link">Schedule <span lang="ja">時間割</span></a></li>
+        <li><a href="resources.html" class="nav__link">Resources <span lang="ja">教材</span></a></li>
+        <li><a href="gallery.html" class="nav__link">Gallery <span lang="ja">ギャラリー</span></a></li>
+        <li><a href="contact.html" class="nav__link nav__link--cta">Join Free <span lang="ja">無料参加</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero container">
+      <span class="eyebrow">Weekly schedule</span>
+      <h1 class="page-hero__title">Class timetable</h1>
+      <p class="page-hero__title" style="font-size:var(--text-xl);color:var(--color-accent)" lang="ja">時間割</p>
+      <p class="page-hero__lede">All times shown in JST (日本時間). Today’s column is highlighted automatically. Swipe sideways on mobile to see the full week.</p>
+    </section>
+
+    <!-- TIMETABLE -->
+    <section class="section section--tight">
+      <div class="container reveal">
+        <div class="table-wrapper" role="region" aria-label="Weekly class schedule, scroll horizontally to see all days" tabindex="0">
+          <table class="schedule-table">
+            <caption class="text-muted" style="text-align:left;padding:0 0 var(--space-3);font-size:var(--text-sm);">Weekly timetable · all classes free</caption>
+            <thead>
+              <tr>
+                <th scope="col">Time (JST)</th>
+                <th scope="col" data-day="Monday">Mon <span lang="ja">月</span></th>
+                <th scope="col" data-day="Tuesday">Tue <span lang="ja">火</span></th>
+                <th scope="col" data-day="Wednesday">Wed <span lang="ja">水</span></th>
+                <th scope="col" data-day="Thursday">Thu <span lang="ja">木</span></th>
+                <th scope="col" data-day="Friday">Fri <span lang="ja">金</span></th>
+                <th scope="col" data-day="Saturday">Sat <span lang="ja">土</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>10:00</td>
+                <td><span class="slot"><span class="slot__level">Beginner</span><span class="slot__ja" lang="ja">初心者 · N5</span></span></td>
+                <td><span class="slot slot--empty">—</span></td>
+                <td><span class="slot"><span class="slot__level">Beginner</span><span class="slot__ja" lang="ja">初心者 · N5</span></span></td>
+                <td><span class="slot slot--empty">—</span></td>
+                <td><span class="slot"><span class="slot__level">Beginner</span><span class="slot__ja" lang="ja">初心者 · N5</span></span></td>
+                <td><span class="slot slot--free"><span class="slot__level">Free trial</span><span class="slot__ja" lang="ja">無料体験</span></span></td>
+              </tr>
+              <tr>
+                <td>13:00</td>
+                <td><span class="slot slot--empty">—</span></td>
+                <td><span class="slot"><span class="slot__level">Intermediate</span><span class="slot__ja" lang="ja">中級 · N4–N3</span></span></td>
+                <td><span class="slot slot--empty">—</span></td>
+                <td><span class="slot"><span class="slot__level">Intermediate</span><span class="slot__ja" lang="ja">中級 · N4–N3</span></span></td>
+                <td><span class="slot slot--empty">—</span></td>
+                <td><span class="slot"><span class="slot__level">Conversation</span><span class="slot__ja" lang="ja">会話 · All</span></span></td>
+              </tr>
+              <tr>
+                <td>18:00</td>
+                <td><span class="slot"><span class="slot__level">Conversation</span><span class="slot__ja" lang="ja">会話 · All</span></span></td>
+                <td><span class="slot"><span class="slot__level">Advanced</span><span class="slot__ja" lang="ja">上級 · N2–N1</span></span></td>
+                <td><span class="slot"><span class="slot__level">Conversation</span><span class="slot__ja" lang="ja">会話 · All</span></span></td>
+                <td><span class="slot"><span class="slot__level">Advanced</span><span class="slot__ja" lang="ja">上級 · N2–N1</span></span></td>
+                <td><span class="slot"><span class="slot__level">Conversation</span><span class="slot__ja" lang="ja">会話 · All</span></span></td>
+                <td><span class="slot slot--empty">—</span></td>
+              </tr>
+              <tr>
+                <td>20:00</td>
+                <td><span class="slot"><span class="slot__level">Intermediate</span><span class="slot__ja" lang="ja">中級 · N4–N3</span></span></td>
+                <td><span class="slot slot--empty">—</span></td>
+                <td><span class="slot"><span class="slot__level">Advanced</span><span class="slot__ja" lang="ja">上級 · N2–N1</span></span></td>
+                <td><span class="slot slot--empty">—</span></td>
+                <td><span class="slot"><span class="slot__level">Beginner</span><span class="slot__ja" lang="ja">初心者 · N5</span></span></td>
+                <td><span class="slot slot--free"><span class="slot__level">Free trial</span><span class="slot__ja" lang="ja">無料体験</span></span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVENTS CALENDAR -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="bilingual-heading bilingual-heading--center">
+            <h2 class="heading-en">Upcoming events &amp; intakes</h2>
+            <p class="heading-ja" lang="ja">今後の予定・募集</p>
+          </div>
+          <p>New class intakes, free conversation cafés, and culture days. Marked days have an event — hover for details.</p>
+        </div>
+        <div class="events-layout">
+          <!-- Calendar (rendered by events.js) -->
+          <div class="calendar reveal reveal--left">
+            <div class="calendar__head">
+              <h3 class="calendar__month" id="calendar-month">Loading…</h3>
+              <span class="badge badge--free">無料 · Free events</span>
+            </div>
+            <div class="calendar__grid" id="calendar-grid" role="img" aria-label="Monthly event calendar"></div>
+          </div>
+          <!-- Upcoming list (rendered by events.js) -->
+          <div class="reveal reveal--right">
+            <h3 style="margin-bottom:var(--space-4)">Next up</h3>
+            <ul class="events-list" id="events-list" role="list"></ul>
+            <a href="contact.html" class="btn btn--primary mt-4">Reserve a spot →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW TO JOIN -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="bilingual-heading bilingual-heading--center"><h2 class="heading-en">How to join</h2><p class="heading-ja" lang="ja">参加方法</p></div>
+        </div>
+        <div class="cards-grid reveal-group">
+          <article class="card reveal"><span class="card__icon" aria-hidden="true">📝</span><h3 class="card__title">1 · Register</h3><p class="card__body">Submit the free sign-up form with your level and preferred times.</p></article>
+          <article class="card reveal"><span class="card__icon" aria-hidden="true">📧</span><h3 class="card__title">2 · Get your link</h3><p class="card__body">You’ll receive a confirmation and (for online) a video link by email.</p></article>
+          <article class="card reveal"><span class="card__icon" aria-hidden="true">🌅</span><h3 class="card__title">3 · Show up &amp; shine</h3><p class="card__body">Arrive a few minutes early, bring curiosity — that’s all you need.</p></article>
+        </div>
+        <div class="text-center mt-6 reveal"><a href="contact.html" class="btn btn--primary">Reserve my spot →</a></div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+      <div class="container" style="max-width:760px;">
+        <div class="section-header reveal">
+          <div class="bilingual-heading bilingual-heading--center"><h2 class="heading-en">Free class FAQ</h2><p class="heading-ja" lang="ja">よくあるご質問</p></div>
+        </div>
+        <div class="faq reveal-group">
+          <details class="faq__item reveal"><summary>Are the classes really free?</summary><div class="faq__answer">Yes — completely. No fees, no hidden costs, no upsells. These lessons are a gift to motivated learners.</div></details>
+          <details class="faq__item reveal"><summary>Do I need any materials?</summary><div class="faq__answer">Just a notebook and curiosity. All worksheets and the kana charts on our Resources page are free to download.</div></details>
+          <details class="faq__item reveal"><summary>Online or in person?</summary><div class="faq__answer">Most classes run online over video; selected beginner and conversation sessions are also offered in person. Each timetable slot is labelled.</div></details>
+          <details class="faq__item reveal"><summary>What if I miss a class?</summary><div class="faq__answer">No problem — sessions repeat weekly, and you’re always welcome to join the next one. Just let sensei know.</div></details>
+          <details class="faq__item reveal"><summary>I’m a total beginner. Is that okay?</summary><div class="faq__answer">Absolutely — beginners are our favourite. Start with the Beginner slot or a free trial and we’ll guide you from あ.</div></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <div class="nav__brand"><a href="index.html"><span class="nav__logo-en" style="color:#fff">Akebono</span> <span class="footer__brand-ja" lang="ja">曙先生</span></a></div>
+        <p style="margin-top:1rem;max-width:32ch;">Free Japanese classes, taught with heart. A gift of language to anyone ready to begin.</p>
+        <div class="footer__social"><a href="#" aria-label="Discord">✦</a><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="YouTube">▶</a></div>
+      </div>
+      <div><h2 class="footer__title">Learn</h2><ul class="footer__list" role="list"><li><a href="classes.html">Classes</a></li><li><a href="schedule.html">Schedule</a></li><li><a href="resources.html">Resources</a></li></ul></div>
+      <div><h2 class="footer__title">About</h2><ul class="footer__list" role="list"><li><a href="about.html">The Teacher</a></li><li><a href="contact.html">Join Free</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h2 class="footer__title" lang="ja">ようこそ</h2><p style="max-width:30ch;">Questions? <a href="contact.html">Reach out</a> — beginners especially welcome.</p></div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span data-year>2026</span> Akebono Sensei. Made with care for free learning.</span>
+      <span lang="ja">日本語を、みんなに。</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/schedule.js" defer></script>
+  <script src="js/events.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+/* ============================================================
+   typography.css — Font setup + type scale
+   Google Fonts are <link>-loaded in each HTML <head> with
+   preconnect. This file maps families to elements.
+   ============================================================ */
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  color: var(--color-text);
+  letter-spacing: 0.01em;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 400; /* Dela Gothic One ships a single 400 weight (already heavy) */
+  line-height: var(--leading-tight);
+  color: var(--color-text);
+  letter-spacing: 0;
+}
+
+h1 { font-size: var(--text-4xl); }
+h2 { font-size: var(--text-3xl); }
+h3 { font-size: var(--text-xl); }
+h4 { font-size: var(--text-lg); }
+
+/* Important display titles — editorial torii red */
+h1,
+.hero__title,
+.page-hero__title,
+.bilingual-heading .heading-en {
+  color: var(--color-accent);
+  letter-spacing: 0;
+}
+
+/* …but keep headings white on red / dark-accent surfaces (placed last to win) */
+.section--accent .heading-en,
+.section--accent .heading-ja,
+.contact-info .heading-en,
+.contact-info .heading-ja,
+.cta-band__title {
+  color: var(--color-white);
+}
+
+p { line-height: var(--leading-normal); }
+
+small { font-size: var(--text-sm); }
+
+strong { font-weight: 700; }
+
+/* ---------- Japanese text rules ---------- */
+.ja-text,
+[lang="ja"] {
+  font-family: var(--font-ja);
+  line-height: var(--leading-ja);
+  letter-spacing: var(--tracking-ja);
+  font-feature-settings: "palt"; /* proportional alternate metrics */
+}
+
+/* Vertical Japanese (decorative strips) */
+.vertical-ja {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-family: var(--font-ja);
+  letter-spacing: 0.15em;
+  line-height: 1;
+}
+
+/* Furigana / ruby */
+ruby { ruby-position: over; }
+rt {
+  font-family: var(--font-ja);
+  font-size: 0.55em;
+  color: var(--color-text-muted);
+  letter-spacing: 0.02em;
+  font-weight: 400;
+}
+
+/* Utility text helpers */
+.text-secondary { color: var(--color-text-secondary); }
+.text-muted     { color: var(--color-text-muted); }
+.text-accent    { color: var(--color-accent); }
+.text-center    { text-align: center; }
+.eyebrow {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+/* JLPT tags, level labels, vocab meta — monospaced, technical */
+.tag,
+.tier__jlpt,
+.class-preview__jlpt,
+.vocab-item__romaji,
+.kana-cell__romaji {
+  font-family: var(--font-mono);
+  letter-spacing: 0.06em;
+}
+.tag {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}

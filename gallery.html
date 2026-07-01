@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — Akebono Sensei | ギャラリー</title>
+  <meta name="description" content="Moments from Akebono Sensei's free Japanese classes — lessons, culture, food, and festivals. 教室や文化のひとこま。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Gallery — Akebono Sensei" />
+  <meta property="og:description" content="Life at Akebono — classes, culture, and community in pictures." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=Noto+Sans+JP:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/typography.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/pages/about.css" />
+  <link rel="stylesheet" href="css/pages/gallery.css" />
+</head>
+<body>
+  <div class="grain-overlay" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header>
+    <nav class="nav" aria-label="Main navigation">
+      <div class="nav__brand"><a href="index.html" aria-label="Akebono Sensei home"><span class="nav__logo-en">Akebono</span><span class="nav__logo-ja" lang="ja">曙</span></a></div>
+      <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu"><span class="nav__bar"></span><span class="nav__bar"></span><span class="nav__bar"></span></button>
+      <ul class="nav__menu" id="nav-menu" role="list">
+        <li><a href="index.html" class="nav__link">Home <span lang="ja">ホーム</span></a></li>
+        <li><a href="about.html" class="nav__link">About <span lang="ja">先生について</span></a></li>
+        <li><a href="classes.html" class="nav__link">Classes <span lang="ja">クラス</span></a></li>
+        <li><a href="schedule.html" class="nav__link">Schedule <span lang="ja">時間割</span></a></li>
+        <li><a href="resources.html" class="nav__link">Resources <span lang="ja">教材</span></a></li>
+        <li><a href="gallery.html" class="nav__link">Gallery <span lang="ja">ギャラリー</span></a></li>
+        <li><a href="contact.html" class="nav__link nav__link--cta">Join Free <span lang="ja">無料参加</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero container">
+      <span class="eyebrow">Gallery · ギャラリー</span>
+      <h1 class="page-hero__title">Life at Akebono</h1>
+      <p class="page-hero__title" style="font-size:var(--text-xl);color:var(--color-accent)" lang="ja">教室と文化のひとこま</p>
+      <p class="page-hero__lede">Moments from our classes, culture days, and community — from first hiragana to festival outings. Tap any photo to view it larger.</p>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container">
+        <!-- GALLERY GRID
+             Each item: button.gallery__item wrapping an <img>.
+             data-caption-en / data-caption-ja feed the lightbox.
+             Swap the SVG placeholders in images/gallery/ for real photos
+             (keep the filename, or update src + the extension here). -->
+        <div class="gallery reveal" role="list" aria-label="Photo gallery">
+          <button type="button" class="gallery__item" role="listitem" data-caption-en="A shrine and red torii gate at golden hour" data-caption-ja="夕暮れの神社と鳥居" aria-label="View larger: A shrine at golden hour">
+            <img class="gallery__img" src="images/japan-pics/japan-04.jpg" alt="A wooden shrine and red torii gate with stone lanterns along a path at golden hour" loading="lazy" decoding="async" />
+            <span class="gallery__caption"><span class="gallery__caption-en">Shrine at golden hour</span><span class="gallery__caption-ja" lang="ja">神社の夕暮れ</span></span>
+          </button>
+          <button type="button" class="gallery__item" role="listitem" data-caption-en="A Lawson convenience store beneath Mount Fuji at dawn" data-caption-ja="富士山とコンビニ" aria-label="View larger: A convenience store beneath Mount Fuji">
+            <img class="gallery__img" src="images/japan-pics/japan-08.jpg" alt="A Lawson convenience store with Mount Fuji rising behind it at dawn, a person walking past" loading="lazy" decoding="async" />
+            <span class="gallery__caption"><span class="gallery__caption-en">Everyday Japan</span><span class="gallery__caption-ja" lang="ja">日常の風景</span></span>
+          </button>
+          <button type="button" class="gallery__item" role="listitem" data-caption-en="A busy Tokyo street glowing with neon at night" data-caption-ja="東京の夜の街" aria-label="View larger: Tokyo at night">
+            <img class="gallery__img" src="images/japan-pics/japan-10.jpg" alt="A crowded Tokyo street at night glowing with colourful neon signs" loading="lazy" decoding="async" />
+            <span class="gallery__caption"><span class="gallery__caption-en">Tokyo nights</span><span class="gallery__caption-ja" lang="ja">東京の夜</span></span>
+          </button>
+          <button type="button" class="gallery__item" role="listitem" data-caption-en="Mount Fuji at dusk with the moon overhead" data-caption-ja="富士山の夕暮れと月" aria-label="View larger: Mount Fuji at dusk">
+            <img class="gallery__img" src="images/japan-pics/japan-06.jpg" alt="Mount Fuji at dusk above a convenience store, with a half moon in the sky" loading="lazy" decoding="async" />
+            <span class="gallery__caption"><span class="gallery__caption-en">Mt. Fuji at dusk</span><span class="gallery__caption-ja" lang="ja">富士山の夕暮れ</span></span>
+          </button>
+          <button type="button" class="gallery__item" role="listitem" data-caption-en="A traveller gazing at Mount Fuji beside a pagoda" data-caption-ja="富士山を望む旅人" aria-label="View larger: A view of Mount Fuji">
+            <img class="gallery__img" src="images/japan-pics/japan-07.jpg" alt="A traveller with a backpack gazing at Mount Fuji beside a pagoda roof on a clear day" loading="lazy" decoding="async" />
+            <span class="gallery__caption"><span class="gallery__caption-en">A view of Fuji</span><span class="gallery__caption-ja" lang="ja">富士山を望む</span></span>
+          </button>
+          <button type="button" class="gallery__item" role="listitem" data-caption-en="Three cats resting by a small red shrine" data-caption-ja="神社で休む三匹の猫" aria-label="View larger: Cats by a shrine">
+            <img class="gallery__img" src="images/japan-pics/japan-09.jpg" alt="Three cats — orange, calico and black — resting by a small red shrine and torii gate" loading="lazy" decoding="async" />
+            <span class="gallery__caption"><span class="gallery__caption-en">Shrine cats</span><span class="gallery__caption-ja" lang="ja">神社の猫</span></span>
+          </button>
+          <button type="button" class="gallery__item" role="listitem" data-caption-en="A cat napping on a Japanese textbook" data-caption-ja="教科書の上の昼寝" aria-label="View larger: A study companion">
+            <img class="gallery__img" src="images/japan-pics/japan-03.jpg" alt="A black-and-white cat napping on a Minna no Nihongo Japanese textbook on stone ground" loading="lazy" decoding="async" />
+            <span class="gallery__caption"><span class="gallery__caption-en">Study buddy</span><span class="gallery__caption-ja" lang="ja">勉強仲間</span></span>
+          </button>
+          <button type="button" class="gallery__item" role="listitem" data-caption-en="A moody nighttime collage of Japanese streets" data-caption-ja="夜の街の風景" aria-label="View larger: The quiet of night">
+            <img class="gallery__img" src="images/japan-pics/japan-11.jpg" alt="A moody nighttime collage of Japanese streets and storefronts, with text reading 夜の静けさ" loading="lazy" decoding="async" />
+            <span class="gallery__caption"><span class="gallery__caption-en">The quiet of night</span><span class="gallery__caption-ja" lang="ja">夜の静けさ</span></span>
+          </button>
+          <button type="button" class="gallery__item" role="listitem" data-caption-en="A multilingual Welcome to Japan sign at the airport" data-caption-ja="ようこそ日本へ" aria-label="View larger: Welcome to Japan">
+            <img class="gallery__img" src="images/japan-pics/japan-05.jpg" alt="An illuminated airport sign reading Welcome to Japan in several languages" loading="lazy" decoding="async" />
+            <span class="gallery__caption"><span class="gallery__caption-en">Welcome to Japan</span><span class="gallery__caption-ja" lang="ja">ようこそ日本へ</span></span>
+          </button>
+          <button type="button" class="gallery__item" role="listitem" data-caption-en="An editorial poster with bold red Japanese typography" data-caption-ja="継続中 — 意味はあとで考える" aria-label="View larger: Keep going poster">
+            <img class="gallery__img" src="images/japan-pics/japan-01.jpg" alt="An editorial poster of a cat on blue paper with bold red Japanese typography reading 継続中 (in progress)" loading="lazy" decoding="async" />
+            <span class="gallery__caption"><span class="gallery__caption-en">Keep going</span><span class="gallery__caption-ja" lang="ja">継続中</span></span>
+          </button>
+          <button type="button" class="gallery__item" role="listitem" data-caption-en="An illustration of ramen with Hokusai's Great Wave" data-caption-ja="ラーメンと大波" aria-label="View larger: Ramen and the Great Wave">
+            <img class="gallery__img" src="images/gallery/gallery-02.jpg" alt="A stylised illustration of a ramen bowl containing Hokusai's Great Wave and Mount Fuji" loading="lazy" decoding="async" />
+            <span class="gallery__caption"><span class="gallery__caption-en">Ramen &amp; the Great Wave</span><span class="gallery__caption-ja" lang="ja">ラーメンと大波</span></span>
+          </button>
+          <button type="button" class="gallery__item" role="listitem" data-caption-en="A neon-lit city street at night" data-caption-ja="夜のドライブ" aria-label="View larger: A night drive">
+            <img class="gallery__img" src="images/gallery/gallery-04.jpg" alt="A person crouching in front of a sports car on a neon-lit city street at night" loading="lazy" decoding="async" />
+            <span class="gallery__caption"><span class="gallery__caption-en">Night drive</span><span class="gallery__caption-ja" lang="ja">夜のドライブ</span></span>
+          </button>
+          <button type="button" class="gallery__item" role="listitem" data-caption-en="A moody collage of a Japanese street at night" data-caption-ja="夜の街角" aria-label="View larger: The city at night">
+            <img class="gallery__img" src="images/gallery/gallery-06.jpg" alt="A moody nighttime collage of a Japanese udon shop, a drink and a quiet street" loading="lazy" decoding="async" />
+            <span class="gallery__caption"><span class="gallery__caption-en">The city at night</span><span class="gallery__caption-ja" lang="ja">夜の街角</span></span>
+          </button>
+          <button type="button" class="gallery__item" role="listitem" data-caption-en="An editorial TOKYO poster at a bus stop" data-caption-ja="東京 — 街の風景" aria-label="View larger: Tokyo poster">
+            <img class="gallery__img" src="images/gallery/gallery-07.jpg" alt="An editorial graphic poster reading TOKYO over two people waiting at a bus stop" loading="lazy" decoding="async" />
+            <span class="gallery__caption"><span class="gallery__caption-en">Tokyo, in motion</span><span class="gallery__caption-ja" lang="ja">東京</span></span>
+          </button>
+          <button type="button" class="gallery__item" role="listitem" data-caption-en="A cheerful cat with Mount Fuji and the sea behind" data-caption-ja="海辺の富士山と猫" aria-label="View larger: A seaside cat with Mount Fuji">
+            <img class="gallery__img" src="images/gallery/gallery-08.jpg" alt="A cheerful cat close to the camera with Mount Fuji and a beach in the background" loading="lazy" decoding="async" />
+            <span class="gallery__caption"><span class="gallery__caption-en">Seaside Fuji</span><span class="gallery__caption-ja" lang="ja">海辺の富士山</span></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section--accent cta-band">
+      <span class="kanji-float" aria-hidden="true" lang="ja">仲間</span>
+      <div class="container text-center">
+        <h2 class="cta-band__title">Want to be in the next photo?</h2>
+        <p class="cta-band__sub">Join a free class and become part of the Akebono community.</p>
+        <a href="contact.html" class="btn btn--on-accent btn--lg">Join free classes →</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== LIGHTBOX ===================== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" aria-hidden="true">
+    <button type="button" class="lightbox__close" aria-label="Close viewer (Esc)">×</button>
+    <span class="lightbox__counter" data-lb-counter aria-hidden="true">1 / 15</span>
+    <button type="button" class="lightbox__btn lightbox__btn--prev" aria-label="Previous image (left arrow)">‹</button>
+    <div class="lightbox__stage">
+      <img class="lightbox__img" data-lb-img src="" alt="" />
+      <p class="lightbox__caption"><span data-lb-en></span> <span data-lb-ja lang="ja"></span></p>
+    </div>
+    <button type="button" class="lightbox__btn lightbox__btn--next" aria-label="Next image (right arrow)">›</button>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <div class="nav__brand"><a href="index.html"><span class="nav__logo-en" style="color:#fff">Akebono</span> <span class="footer__brand-ja" lang="ja">曙先生</span></a></div>
+        <p style="margin-top:1rem;max-width:32ch;">Free Japanese classes, taught with heart. A gift of language to anyone ready to begin.</p>
+        <div class="footer__social"><a href="#" aria-label="Discord">✦</a><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="YouTube">▶</a></div>
+      </div>
+      <div><h2 class="footer__title">Learn</h2><ul class="footer__list" role="list"><li><a href="classes.html">Classes</a></li><li><a href="schedule.html">Schedule</a></li><li><a href="resources.html">Resources</a></li><li><a href="gallery.html">Gallery</a></li></ul></div>
+      <div><h2 class="footer__title">About</h2><ul class="footer__list" role="list"><li><a href="about.html">The Teacher</a></li><li><a href="contact.html">Join Free</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h2 class="footer__title" lang="ja">ようこそ</h2><p style="max-width:30ch;">Questions? <a href="contact.html">Reach out</a> — beginners especially welcome.</p></div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span data-year>2026</span> Akebono Sensei. Made with care for free learning.</span>
+      <span lang="ja">日本語を、みんなに。</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/gallery.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+/* ============================================================
+   classes.css — Classes + Schedule + Resources shared styles
+   ============================================================ */
+
+/* Class tier card */
+.tier {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+.tier__head { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--space-3); }
+.tier__level { font-family: var(--font-display); font-size: var(--text-xl); }
+.tier__level-ja { font-family: var(--font-ja); color: var(--color-accent); font-size: var(--text-sm); display: block; }
+.tier__jlpt {
+  font-weight: 700;
+  font-size: var(--text-sm);
+  color: var(--color-accent);
+  background: var(--color-accent-soft);
+  padding: 0.3rem 0.7rem;
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+}
+.tier__list { list-style: none; padding: 0; display: flex; flex-direction: column; gap: var(--space-2); margin-top: var(--space-2); }
+.tier__list li { display: flex; gap: var(--space-2); font-size: var(--text-sm); color: var(--color-text-secondary); }
+.tier__list li::before { content: '✦'; color: var(--color-accent); flex: none; }
+.tier__meta { display: flex; gap: var(--space-4); margin-top: auto; padding-top: var(--space-4); border-top: 1px solid var(--color-border); font-size: var(--text-xs); color: var(--color-text-muted); }
+.tier--featured { border-color: var(--color-accent); box-shadow: var(--shadow-accent); }
+.tier--featured::before {
+  content: '無料 · FREE TRIAL';
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-accent);
+  color: #fff;
+  font-family: var(--font-ja);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 0.3rem 0.9rem;
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+}
+
+/* ---------- Schedule table ---------- */
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: var(--radius-md);
+  box-shadow: inset -8px 0 12px -8px rgba(0, 0, 0, 0.5); /* scroll hint — was indigo tint */
+}
+.schedule-table {
+  min-width: 640px;
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+.schedule-table th, .schedule-table td {
+  padding: var(--space-3) var(--space-4);
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+  font-size: var(--text-sm);
+}
+.schedule-table thead th {
+  background: var(--color-accent);
+  color: #fff;
+  font-family: var(--font-display);
+  font-weight: 400; /* Dela Gothic One is single-weight 400 */
+  position: sticky;
+  top: 0;
+}
+.schedule-table tbody tr:hover { background: var(--color-accent-soft); }
+.schedule-table td:first-child { font-weight: 700; color: var(--color-accent); white-space: nowrap; }
+.slot { display: inline-flex; flex-direction: column; }
+.slot__level { font-weight: 600; }
+.slot__ja { font-family: var(--font-ja); font-size: var(--text-xs); color: var(--color-text-muted); }
+.slot--free { color: var(--color-success); }
+.slot--empty { color: var(--color-text-muted); }
+@media (min-width: 768px) {
+  .table-wrapper { box-shadow: none; }
+  .schedule-table { min-width: unset; }
+}
+
+/* ---------- FAQ (accordion via <details>) ---------- */
+.faq { display: flex; flex-direction: column; gap: var(--space-3); }
+.faq__item {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 0 var(--space-5);
+  transition: border-color var(--duration-fast) var(--ease-out);
+}
+.faq__item[open] { border-color: var(--color-accent); }
+.faq__item summary {
+  list-style: none;
+  cursor: pointer;
+  padding: var(--space-4) 0;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+.faq__item summary::-webkit-details-marker { display: none; }
+.faq__item summary::after {
+  content: '+';
+  font-size: 1.5rem;
+  color: var(--color-accent);
+  transition: transform var(--duration-normal) var(--ease-spring);
+  line-height: 1;
+}
+.faq__item[open] summary::after { transform: rotate(45deg); }
+.faq__answer { padding-bottom: var(--space-4); color: var(--color-text-secondary); font-size: var(--text-sm); }
+
+/* ---------- Kana charts (Resources) ---------- */
+.kana-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--space-2);
+}
+.kana-cell {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-3) var(--space-2);
+  text-align: center;
+  transition: transform var(--duration-fast) var(--ease-spring),
+              border-color var(--duration-fast) var(--ease-out),
+              background var(--duration-fast) var(--ease-out);
+}
+.kana-cell:hover { transform: translateY(-3px); border-color: var(--color-accent); background: var(--color-accent-soft); }
+.kana-cell__char { font-family: var(--font-ja); font-size: var(--text-xl); display: block; line-height: 1.2; }
+.kana-cell__romaji { font-size: var(--text-xs); color: var(--color-text-muted); }
+.kana-cell--empty { background: transparent; border-color: transparent; pointer-events: none; }
+
+/* Vocab list */
+.vocab-list { list-style: none; padding: 0; display: grid; gap: var(--space-2); }
+.vocab-item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: var(--space-3);
+  align-items: center;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-4);
+}
+.vocab-item__ja { font-family: var(--font-ja); font-size: var(--text-lg); font-weight: 500; }
+.vocab-item__romaji { color: var(--color-text-muted); font-size: var(--text-sm); }
+.vocab-item__en { font-size: var(--text-sm); color: var(--color-text-secondary); text-align: right; }
+
+/* Resource link cards */
+.resource-link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  text-align: left;
+}
+.resource-link__icon {
+  width: 48px; height: 48px; flex: none;
+  display: grid; place-items: center;
+  border-radius: var(--radius-md);
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+  font-size: 1.4rem;
+}
