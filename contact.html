@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Join Free Classes — Akebono Sensei | お問い合わせ</title>
-  <meta name="description" content="Sign up for free Japanese classes. Tell us your level and goals — beginners especially welcome. お問い合わせはこちら。" />
+  <title>Book a Class — Akebono · Sumita Som | お問い合わせ</title>
+  <meta name="description" content="Book Japanese &amp; JLPT classes with Sumita Som. Online via Google Meet, 1-to-1 or group. Message on WhatsApp or send the enquiry form." />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Join Free Classes — Akebono Sensei" />
-  <meta property="og:description" content="Sign up for warm, free Japanese lessons today." />
+  <meta property="og:title" content="Book a Class — Akebono · Sumita Som" />
+  <meta property="og:description" content="Enquire about Japanese &amp; JLPT classes with Sumita Som — online via Google Meet." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="css/variables.css" />
   <link rel="stylesheet" href="css/typography.css" />
   <link rel="stylesheet" href="css/layout.css" />
-  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/components.css?v=2" />
   <link rel="stylesheet" href="css/pages/about.css" />
   <link rel="stylesheet" href="css/pages/contact.css" />
 </head>
@@ -27,7 +27,7 @@
 
   <header>
     <nav class="nav" aria-label="Main navigation">
-      <div class="nav__brand"><a href="index.html" aria-label="Akebono Sensei home"><span class="nav__logo-en">Akebono</span><span class="nav__logo-ja" lang="ja">曙</span></a></div>
+      <div class="nav__brand"><a href="index.html" aria-label="Akebono home"><span class="nav__logo-en">Akebono</span><span class="nav__logo-ja" lang="ja">曙</span></a></div>
       <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu"><span class="nav__bar"></span><span class="nav__bar"></span><span class="nav__bar"></span></button>
       <ul class="nav__menu" id="nav-menu" role="list">
         <li><a href="index.html" class="nav__link">Home <span lang="ja">ホーム</span></a></li>
@@ -36,17 +36,17 @@
         <li><a href="schedule.html" class="nav__link">Schedule <span lang="ja">時間割</span></a></li>
         <li><a href="resources.html" class="nav__link">Resources <span lang="ja">教材</span></a></li>
         <li><a href="gallery.html" class="nav__link">Gallery <span lang="ja">ギャラリー</span></a></li>
-        <li><a href="contact.html" class="nav__link nav__link--cta">Join Free <span lang="ja">無料参加</span></a></li>
+        <li><a href="contact.html" class="nav__link nav__link--cta">Book a Class <span lang="ja">お問い合わせ</span></a></li>
       </ul>
     </nav>
   </header>
 
   <main id="main">
     <section class="page-hero container">
-      <span class="eyebrow">Join free · 無料参加</span>
+      <span class="eyebrow">Book a class · お問い合わせ</span>
       <h1 class="page-hero__title">Start your journey</h1>
       <p class="page-hero__title" style="font-size:var(--text-xl);color:var(--color-accent)" lang="ja">お問い合わせ</p>
-      <p class="page-hero__lede">Fill in the form and sensei will personally reply within a couple of days. There’s no fee and no obligation — just a warm welcome.</p>
+      <p class="page-hero__lede">Fill in the form or message on WhatsApp, and Sumita will personally reply within a couple of days. Tell her your level and goals — beginners especially welcome.</p>
     </section>
 
     <section class="section section--tight">
@@ -55,63 +55,73 @@
         <div class="reveal reveal--left">
           <div class="contact-form-card">
             <div class="bilingual-heading" style="margin-bottom:1.5rem;">
-              <h2 class="heading-en">Join free classes</h2>
-              <p class="heading-ja" lang="ja">無料クラスに申し込む</p>
+              <h2 class="heading-en">Book a class / Enquire</h2>
+              <p class="heading-ja" lang="ja">クラスのお問い合わせ</p>
             </div>
 
-            <form class="form" id="signup-form" novalidate>
+            <form class="form" id="enquiry-form" novalidate>
               <div class="form__group">
-                <label class="form__label" for="name">Name <span class="form__required" aria-hidden="true">*</span></label>
-                <input class="form__input" type="text" id="name" name="name" autocomplete="name" required aria-required="true" aria-describedby="err-name" placeholder="Your name" />
-                <span class="form__error" id="err-name" data-error-for="name" role="alert"></span>
+                <label class="form__label" for="field-name">Full Name <span lang="ja">お名前</span> <span class="form__required" aria-label="required">*</span></label>
+                <input class="form__input" type="text" id="field-name" name="name" placeholder="Your full name" required autocomplete="name" />
               </div>
 
               <div class="form__group">
-                <label class="form__label" for="email">Email <span class="form__required" aria-hidden="true">*</span></label>
-                <input class="form__input" type="email" id="email" name="email" autocomplete="email" required aria-required="true" aria-describedby="err-email" placeholder="you@example.com" />
-                <span class="form__error" id="err-email" data-error-for="email" role="alert"></span>
+                <label class="form__label" for="field-email">Email Address <span lang="ja">メールアドレス</span> <span class="form__required" aria-label="required">*</span></label>
+                <input class="form__input" type="email" id="field-email" name="email" placeholder="your@email.com" required autocomplete="email" />
               </div>
 
               <div class="form__group">
-                <label class="form__label" for="level">Current level <span class="form__required" aria-hidden="true">*</span></label>
-                <select class="form__select" id="level" name="level" required aria-required="true" aria-describedby="err-level">
-                  <option value="">Choose your level…</option>
-                  <option value="none">Complete beginner — 初心者</option>
-                  <option value="n5">Beginner (N5)</option>
-                  <option value="n4-n3">Intermediate (N4–N3)</option>
-                  <option value="n2-n1">Advanced (N2–N1)</option>
-                  <option value="conversation">Just want to speak — 会話</option>
+                <label class="form__label" for="field-whatsapp">WhatsApp Number <span lang="ja">電話番号</span> <span class="form__required" aria-label="required">*</span></label>
+                <input class="form__input" type="tel" id="field-whatsapp" name="whatsapp" placeholder="+91 00000 00000" required autocomplete="tel" />
+              </div>
+
+              <div class="form__group">
+                <label class="form__label" for="field-course">Course Interested In <span lang="ja">コース</span> <span class="form__required" aria-label="required">*</span></label>
+                <select class="form__select" id="field-course" name="course" required>
+                  <option value="" disabled selected>Select a course</option>
+                  <option value="JLPT N5">JLPT N5 — ₹12,500</option>
+                  <option value="JLPT N4">JLPT N4 — ₹13,500</option>
+                  <option value="JLPT N3">JLPT N3 — ₹15,000</option>
+                  <option value="JFT-Basic">JFT-Basic</option>
+                  <option value="Private Class">Private Class (1-to-1)</option>
+                  <option value="Not sure yet">Not sure yet</option>
                 </select>
-                <span class="form__error" id="err-level" data-error-for="level" role="alert"></span>
-              </div>
-
-              <div class="form__group">
-                <label class="form__label" for="goals">Your goals <span class="form__required" aria-hidden="true">*</span></label>
-                <textarea class="form__textarea" id="goals" name="goals" required aria-required="true" aria-describedby="err-goals" placeholder="e.g. I want to travel to Japan, watch anime without subtitles, or pass the JLPT…"></textarea>
-                <span class="form__error" id="err-goals" data-error-for="goals" role="alert"></span>
               </div>
 
               <fieldset class="form__group" style="border:none;padding:0;">
-                <legend class="form__label">Preferred schedule</legend>
+                <legend class="form__label">Preferred Batch <span lang="ja">バッチ</span> <span class="form__required" aria-label="required">*</span></legend>
                 <div class="form__options">
-                  <label class="form__option"><input type="checkbox" name="schedule" value="weekday-morning" /> Weekday mornings</label>
-                  <label class="form__option"><input type="checkbox" name="schedule" value="weekday-evening" /> Weekday evenings</label>
-                  <label class="form__option"><input type="checkbox" name="schedule" value="weekend" /> Weekends</label>
-                  <label class="form__option"><input type="checkbox" name="schedule" value="flexible" /> I’m flexible</label>
+                  <label class="form__option"><input type="radio" name="batch" value="Morning Batch" required /> Morning Batch</label>
+                  <label class="form__option"><input type="radio" name="batch" value="Evening Batch" /> Evening Batch</label>
+                  <label class="form__option"><input type="radio" name="batch" value="No preference" /> No preference</label>
                 </div>
               </fieldset>
 
-              <button type="submit" class="btn btn--primary btn--lg btn--block">Send my application →</button>
-              <p class="form__hint">We’ll never share your details. Reply usually within 2 days.</p>
-            </form>
-
-            <div class="form__success" id="form-success" role="status">
-              <span style="font-size:1.6rem" aria-hidden="true">🌅</span>
-              <div>
-                <strong lang="ja">ありがとうございます！</strong>
-                <p style="margin-top:.25rem">Thank you — your application is in. Sensei will email you soon. Welcome to Akebono!</p>
+              <div class="form__group">
+                <label class="form__label" for="field-level">Current Japanese Level <span lang="ja">現在のレベル</span></label>
+                <select class="form__select" id="field-level" name="level">
+                  <option value="" disabled selected>Select your level</option>
+                  <option value="Complete Beginner">Complete Beginner</option>
+                  <option value="Some basics (Hiragana/Katakana)">Some basics (Hiragana/Katakana)</option>
+                  <option value="Conversational">Conversational</option>
+                  <option value="JLPT N5 level">JLPT N5 level</option>
+                  <option value="JLPT N4 level">JLPT N4 level</option>
+                  <option value="JLPT N3 or above">JLPT N3 or above</option>
+                </select>
               </div>
-            </div>
+
+              <div class="form__group">
+                <label class="form__label" for="field-goal">Your Goal <span lang="ja">目標</span></label>
+                <textarea class="form__textarea" id="field-goal" name="goal" placeholder="e.g. I want to pass JLPT N5 by December…" rows="4"></textarea>
+              </div>
+
+              <button class="btn btn--primary btn--lg btn--block" type="submit" id="form-submit-btn">Send Enquiry <span lang="ja">送信する</span></button>
+              <p class="form__hint">We’ll never share your details. Reply usually within 2 days.</p>
+
+              <!-- Hidden iframe — Google Form posts into this so the page never redirects.
+                   Success/error feedback is handled by the toaster (see end of <body>). -->
+              <iframe name="hidden-iframe" id="hidden-iframe" title="Form submission target" style="display:none;" aria-hidden="true"></iframe>
+            </form>
           </div>
         </div>
 
@@ -121,22 +131,23 @@
             <span class="vertical-ja" lang="ja" aria-hidden="true">お気軽に</span>
             <div class="bilingual-heading"><h3 class="heading-en">Get in touch</h3><p class="heading-ja" style="color:rgba(255,255,255,.8)" lang="ja">連絡先</p></div>
             <ul class="contact-info__list">
-              <li class="contact-info__item"><span class="contact-info__icon" aria-hidden="true">✉️</span><span>Email<br /><a href="mailto:hello@akebono-sensei.example">hello@akebono-sensei.example</a></span></li>
-              <li class="contact-info__item"><span class="contact-info__icon" aria-hidden="true">💬</span><span>Discord community<br /><a href="#">Join the server</a></span></li>
+              <li class="contact-info__item"><span class="contact-info__icon" aria-hidden="true">📱</span><span>Phone / WhatsApp<br /><a href="tel:+919175238596">+91 91752 38596</a> · <a href="https://wa.me/919175238596">WhatsApp</a></span></li>
+              <li class="contact-info__item"><span class="contact-info__icon" aria-hidden="true">✉️</span><span>Email<br /><a href="mailto:some.sumita92@gmail.com">some.sumita92@gmail.com</a></span></li>
+              <li class="contact-info__item"><span class="contact-info__icon" aria-hidden="true">💼</span><span>LinkedIn<br /><a href="https://www.linkedin.com/in/sumita-som-98b6471b0/">linkedin</a></span></li>
               <li class="contact-info__item"><span class="contact-info__icon" aria-hidden="true">🕐</span><span>Response time<br />Usually within 2 days</span></li>
               <li class="contact-info__item"><span class="contact-info__icon" aria-hidden="true">🌐</span><span>Languages<br />English · 日本語</span></li>
             </ul>
             <div class="contact-social">
-              <a href="#" aria-label="Discord">✦</a>
-              <a href="#" aria-label="Instagram">◎</a>
-              <a href="#" aria-label="YouTube">▶</a>
+              <a href="https://wa.me/919175238596" aria-label="WhatsApp Sumita Som">✆</a>
+              <a href="mailto:some.sumita92@gmail.com" aria-label="Email Sumita Som">✉</a>
+              <a href="https://www.linkedin.com/in/sumita-som-98b6471b0/" aria-label="LinkedIn">in</a>
             </div>
           </div>
 
           <div class="map-placeholder">
             <div>
-              <strong>📍 In-person classes</strong>
-              <p style="margin-top:.5rem;font-size:var(--text-sm)">Map embed placeholder — drop in a Google Maps iframe for your venue here.</p>
+              <strong>💻 Online classes</strong>
+              <p style="margin-top:.5rem;font-size:var(--text-sm)">All classes run live on Google Meet — you’ll get a link after booking. One-to-one or small group batches.</p>
             </div>
           </div>
         </aside>
@@ -147,21 +158,57 @@
   <footer class="footer">
     <div class="container footer__grid">
       <div>
-        <div class="nav__brand"><a href="index.html"><span class="nav__logo-en" style="color:#fff">Akebono</span> <span class="footer__brand-ja" lang="ja">曙先生</span></a></div>
-        <p style="margin-top:1rem;max-width:32ch;">Free Japanese classes, taught with heart. A gift of language to anyone ready to begin.</p>
-        <div class="footer__social"><a href="#" aria-label="Discord">✦</a><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="YouTube">▶</a></div>
+        <div class="nav__brand"><a href="index.html"><span class="nav__logo-en" style="color:#fff">Akebono</span> <span class="footer__brand-ja" lang="ja">曙</span></a></div>
+        <p style="margin-top:1rem;max-width:34ch;">Japanese &amp; JLPT classes with <strong>Sumita Som</strong> — JLPT N2 certified trainer &amp; Japanese-English interpreter. Online via Google Meet.</p>
+        <div class="footer__social">
+          <a href="https://wa.me/919175238596" aria-label="WhatsApp Sumita Som">✆</a>
+          <a href="mailto:some.sumita92@gmail.com" aria-label="Email Sumita Som">✉</a>
+          <a href="https://www.linkedin.com/in/sumita-som-98b6471b0/" aria-label="LinkedIn">in</a>
+        </div>
       </div>
-      <div><h2 class="footer__title">Learn</h2><ul class="footer__list" role="list"><li><a href="classes.html">Classes</a></li><li><a href="schedule.html">Schedule</a></li><li><a href="resources.html">Resources</a></li></ul></div>
-      <div><h2 class="footer__title">About</h2><ul class="footer__list" role="list"><li><a href="about.html">The Teacher</a></li><li><a href="contact.html">Join Free</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-      <div><h2 class="footer__title" lang="ja">ようこそ</h2><p style="max-width:30ch;">Questions? <a href="contact.html">Reach out</a> — beginners especially welcome.</p></div>
+      <div>
+        <h2 class="footer__title">Learn</h2>
+        <ul class="footer__list" role="list">
+          <li><a href="classes.html">Classes</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer__title">About</h2>
+        <ul class="footer__list" role="list">
+          <li><a href="about.html">The Teacher</a></li>
+          <li><a href="classes.html">Courses &amp; Pricing</a></li>
+          <li><a href="contact.html">Book a Class</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer__title">Contact</h2>
+        <ul class="footer__list" role="list">
+          <li><a href="tel:+919175238596">+91 91752 38596</a></li>
+          <li><a href="https://wa.me/919175238596">WhatsApp</a></li>
+          <li><a href="mailto:some.sumita92@gmail.com">some.sumita92@gmail.com</a></li>
+          <li><a href="https://www.linkedin.com/in/sumita-som-98b6471b0/">LinkedIn</a></li>
+        </ul>
+      </div>
     </div>
     <div class="container footer__bottom">
-      <span>© <span data-year>2026</span> Akebono Sensei. Made with care for free learning.</span>
+      <span>© <span data-year>2026</span> Akebono · Sumita Som. Japanese language classes.</span>
       <span lang="ja">日本語を、みんなに。</span>
     </div>
   </footer>
 
-  <script src="js/main.js" defer></script>
-  <script src="js/contact.js" defer></script>
+  <!-- Toaster — shown after form submit -->
+  <div class="toaster" id="form-toaster" role="status" aria-live="polite" aria-atomic="true">
+    <span class="toaster__icon" id="toaster-icon">✓</span>
+    <div class="toaster__text">
+      <span class="toaster__title" id="toaster-title">ありがとうございます！</span>
+      <span class="toaster__sub" id="toaster-sub">Sumita will reach out to you shortly.</span>
+    </div>
+  </div>
+
+  <script src="js/main.js?v=2" defer></script>
+  <script src="js/contact.js?v=3" defer></script>
 </body>
 </html>

@@ -558,3 +558,56 @@
 .bg--machiya  { background-image: url('../images/gallery/gallery-05.jpg'); }
 .bg--torii    { background-image: url('../images/gallery/gallery-09.jpg'); }
 .bg--neon     { background-image: url('../images/japan-pics/japan-10.jpg'); }
+
+/* =========================================================
+   TOASTER (form-submit notification)
+   ========================================================= */
+.toaster {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(120%);
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--color-bg-hover);            /* #1A1A1A token */
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-accent);
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  min-width: 280px;
+  max-width: 90vw;
+  box-shadow: var(--shadow-lg);
+  pointer-events: none;
+  opacity: 0;
+  transition: transform var(--duration-slow) var(--ease-spring),
+              opacity   var(--duration-normal) var(--ease-out);
+}
+.toaster.is-visible {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+.toaster__icon { font-size: 1.25rem; flex-shrink: 0; color: var(--color-accent); }
+.toaster__text { display: flex; flex-direction: column; gap: 0.1rem; }
+.toaster__title {
+  font-family: var(--font-display);
+  font-weight: 400;                              /* Dela Gothic One is single-weight */
+  font-size: 0.95rem;
+  color: var(--color-text);
+}
+.toaster__sub {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  color: var(--color-text-secondary);
+}
+.toaster--error { border-left-color: var(--color-error); }
+.toaster--error .toaster__icon { color: var(--color-error); }
+
+@media (prefers-reduced-motion: reduce) {
+  .toaster {
+    transition: opacity var(--duration-normal) var(--ease-out);
+    transform: translateX(-50%) translateY(0);   /* no slide — fade only */
+  }
+}
