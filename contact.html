@@ -90,9 +90,12 @@
 
               <fieldset class="form__group" style="border:none;padding:0;">
                 <legend class="form__label">Preferred Batch <span lang="ja">バッチ</span> <span class="form__required" aria-label="required">*</span></legend>
+                <!-- NOTE: radio `value`s must stay exactly "Morning Batch" / "Evening Batch" /
+                     "No preference" to match the Google Form's multiple-choice options — the
+                     times below are display-only labels. -->
                 <div class="form__options">
-                  <label class="form__option"><input type="radio" name="batch" value="Morning Batch" required /> Morning Batch</label>
-                  <label class="form__option"><input type="radio" name="batch" value="Evening Batch" /> Evening Batch</label>
+                  <label class="form__option"><input type="radio" name="batch" value="Morning Batch" required /> Morning Batch <span style="margin-left:auto;font-family:var(--font-mono);font-size:var(--text-xs);color:var(--color-text-muted);"></span></label>
+                  <label class="form__option"><input type="radio" name="batch" value="Evening Batch" /> Evening Batch <span style="margin-left:auto;font-family:var(--font-mono);font-size:var(--text-xs);color:var(--color-text-muted);"></span></label>
                   <label class="form__option"><input type="radio" name="batch" value="No preference" /> No preference</label>
                 </div>
               </fieldset>

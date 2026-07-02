@@ -47,40 +47,77 @@
       <span class="eyebrow">Batches &amp; availability</span>
       <h1 class="page-hero__title">Class schedule</h1>
       <p class="page-hero__title" style="font-size:var(--text-xl);color:var(--color-accent)" lang="ja">時間割</p>
-      <p class="page-hero__lede">Morning and evening batches, online via Google Meet — one-to-one or in small groups. Timings are flexible; contact to confirm the batch that fits you.</p>
+      <p class="page-hero__lede">Live batches for JLPT N5, N4, and N3 — online via Google Meet, one-to-one or in small groups. All times shown in IST (Indian Standard Time).</p>
     </section>
 
-    <!-- BATCHES -->
+    <!-- SCHEDULE -->
     <section class="section section--tight">
-      <div class="container reveal">
-        <div class="table-wrapper" role="region" aria-label="Class batches" tabindex="0">
-          <table class="schedule-table">
-            <caption class="text-muted" style="text-align:left;padding:0 0 var(--space-3);font-size:var(--text-sm);">Batches · online via Google Meet · 1-to-1 or group</caption>
-            <thead>
-              <tr>
-                <th scope="col">Batch</th>
-                <th scope="col">Availability</th>
-                <th scope="col">Timings</th>
-                <th scope="col">Format</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><span class="slot"><span class="slot__level">Morning Batch</span><span class="slot__ja" lang="ja">朝クラス</span></span></td>
-                <td><span class="slot slot--free">Available</span></td>
-                <td>Contact to confirm batch timings</td>
-                <td>Google Meet · 1-to-1 or Group</td>
-              </tr>
-              <tr>
-                <td><span class="slot"><span class="slot__level">Evening Batch</span><span class="slot__ja" lang="ja">夜クラス</span></span></td>
-                <td><span class="slot slot--free">Available</span></td>
-                <td>Contact to confirm batch timings</td>
-                <td>Google Meet · 1-to-1 or Group</td>
-              </tr>
-            </tbody>
-          </table>
+      <div class="container">
+        <div class="cards-grid reveal-group">
+
+          <!-- N5 -->
+          <article class="card reveal">
+            <div class="bilingual-heading" style="margin-bottom:var(--space-4);">
+              <h3 class="heading-en">JLPT N5</h3>
+              <p class="heading-ja" lang="ja">日本語能力試験 N5</p>
+            </div>
+            <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:var(--space-3);">
+              <li style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:var(--space-2);padding-bottom:var(--space-3);border-bottom:1px solid var(--color-border);">
+                <span style="font-family:var(--font-mono);color:var(--color-text);">8:00 – 9:00 AM</span>
+                <span style="font-size:var(--text-sm);color:var(--color-text-secondary);">Mon – Sat</span>
+                <span class="badge">Morning Batch</span>
+              </li>
+              <li style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:var(--space-2);">
+                <span style="font-family:var(--font-mono);color:var(--color-text);">9:00 – 10:00 PM</span>
+                <span style="font-size:var(--text-sm);color:var(--color-text-secondary);">Mon – Sat</span>
+                <span class="badge">Evening Batch</span>
+              </li>
+            </ul>
+            <p class="text-muted" style="margin-top:var(--space-4);font-size:var(--text-sm);"><span aria-hidden="true" style="color:var(--color-accent);">✦</span> Sunday off · Online via Google Meet · 1-to-1 or Group</p>
+          </article>
+
+          <!-- N4 -->
+          <article class="card reveal">
+            <div class="bilingual-heading" style="margin-bottom:var(--space-4);">
+              <h3 class="heading-en">JLPT N4</h3>
+              <p class="heading-ja" lang="ja">日本語能力試験 N4</p>
+            </div>
+            <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:var(--space-3);">
+              <li style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:var(--space-2);padding-bottom:var(--space-3);border-bottom:1px solid var(--color-border);">
+                <span style="font-family:var(--font-mono);color:var(--color-text);">7:00 – 8:00 PM</span>
+                <span style="font-size:var(--text-sm);color:var(--color-text-secondary);">Mon – Sat</span>
+                <span class="badge">Evening Batch</span>
+              </li>
+              <li style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:var(--space-2);">
+                <span style="font-family:var(--font-mono);color:var(--color-text);">8:00 – 9:00 PM</span>
+                <span style="font-size:var(--text-sm);color:var(--color-text-secondary);">Mon – Sat</span>
+                <span class="badge">Evening Batch</span>
+              </li>
+            </ul>
+            <p class="text-muted" style="margin-top:var(--space-4);font-size:var(--text-sm);"><span aria-hidden="true" style="color:var(--color-accent);">✦</span> Sunday off · Online via Google Meet · 1-to-1 or Group</p>
+          </article>
+
+          <!-- N3 -->
+          <article class="card reveal">
+            <div class="bilingual-heading" style="margin-bottom:var(--space-4);">
+              <h3 class="heading-en">JLPT N3</h3>
+              <p class="heading-ja" lang="ja">日本語能力試験 N3</p>
+            </div>
+            <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:var(--space-3);">
+              <li style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:var(--space-2);">
+                <span style="font-family:var(--font-mono);color:var(--color-text);">5:00 – 7:00 PM</span>
+                <span style="font-size:var(--text-sm);color:var(--color-text-secondary);">Mon · Wed · Fri</span>
+                <span class="badge">Evening Batch</span>
+              </li>
+            </ul>
+            <p class="text-muted" style="margin-top:var(--space-4);font-size:var(--text-sm);"><span aria-hidden="true" style="color:var(--color-accent);">✦</span> Mon, Wed &amp; Fri only · Online via Google Meet · 1-to-1 or Group</p>
+          </article>
+
         </div>
-        <p class="text-center mt-4"><a href="contact.html" class="btn btn--primary">Enquire about batch timings →</a></p>
+
+        <p class="text-muted text-center" style="max-width:64ch;margin:var(--space-6) auto 0;font-size:var(--text-sm);">* All timings are in IST (Indian Standard Time). Batch availability is subject to change — <a href="contact.html" style="color:var(--color-accent);">contact Sumita</a> to confirm current openings.</p>
+
+        <div class="text-center mt-6 reveal"><a href="contact.html" class="btn btn--primary">Enquire about a batch →</a></div>
       </div>
     </section>
 
