@@ -4,7 +4,7 @@
 
 .page-hero {
   position: relative;
-  padding: var(--space-8) 0 var(--space-7);
+  padding-block: var(--space-8) var(--space-7);
   text-align: center;
   overflow: hidden;
 }
